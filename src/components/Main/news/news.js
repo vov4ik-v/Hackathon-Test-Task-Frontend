@@ -24,6 +24,12 @@ const News = () => {
                 <p>За крок до захоплення Києва: Буданов розкрив унікальні деталі, хто та як зупинив окупантів</p>
               </div>
             </div>
+            <div className={styles.imageContainer}>
+              <img src="/main-page/news2.svg" alt="News 2" className={styles.newsImage} />
+              <div className={styles.textBlock2}>
+                <p>За крок до захоплення Києва: Буданов розкрив унікальні деталі, хто та як зупинив окупантів</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

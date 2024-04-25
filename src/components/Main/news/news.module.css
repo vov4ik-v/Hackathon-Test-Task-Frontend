@@ -20,14 +20,18 @@
 
 .newsSection {
     display: flex;
+    width: 90%;
 }
 
-.leftSection,
+.leftSection {
+    position: relative;
+    margin-top: 10rem;
+    margin-left: 10rem;
+}
+
 .rightSection {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    position: relative;
+    margin-left: auto;
 }
 
 .imageContainer {
