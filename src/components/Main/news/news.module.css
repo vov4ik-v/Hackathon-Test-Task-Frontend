@@ -67,3 +67,29 @@
 .textBlock2 {
     left: 0;
 }
+
+.learnMoreBox,
+.learnMoreBox1 {
+    position: absolute;
+    padding: 8px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.learnMoreBox {
+    left: 19.5%;
+    transform: translateX(-50%);
+}
+
+.learnMoreBox1 {
+    left: 72%;
+    transform: translateX(-50%);
+}
+
+.learnMoreText,
+.learnMoreText1 {
+    font-size: 24px;
+    color: #212121;
+}
