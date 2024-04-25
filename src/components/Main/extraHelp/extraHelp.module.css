@@ -35,3 +35,18 @@
 .title {
     font-size: 48px;
 }
+
+.quote {
+    display: flex;
+    align-items: center;
+}
+
+.quoteText {
+    font-size: 96px;
+}
+
+.quoteContent {
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 5rem;
+}

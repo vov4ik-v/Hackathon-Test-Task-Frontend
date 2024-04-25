@@ -18,9 +18,14 @@ const ExtraHelp = () => {
                         <span className={styles.itemText}>Бригада</span>
                         <span className={styles.itemNumber}>128</span>
                     </div>
+                    <div className={styles.quote}>
+                        <span className={styles.quoteText}>"</span>
+                        <p className={styles.quoteContent}>
+                            Ми, 128 бригада, стоїмо на передовій, де кожен день зустрічаємося з різноманітними викликами та труднощами. У зв'язку з постійною потребою у підтримці, ми звертаємося до вас з проханням про необхідність рюкзаків.
+                        </p>
+                    </div>
                 </div>
                 <div className={styles.rightSection}>
-                    {/* Пустий розділ */}
                 </div>
             </div>
         </div>
