@@ -11,7 +11,7 @@ export default function Home() {
     <>
     {/* <SupportAction />
     <HelpUkraine /> */}
-    {/* <Header /> */}
+    <Header />
     <Footer />
     </>
   );

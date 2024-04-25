@@ -1,0 +1,56 @@
+.header {
+    width: 95%;
+    height: 79px;
+    position: relative;
+    border-radius: 51px;
+    border: 2px solid #3F3F3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.navItem {
+    margin-right: 10rem;
+    font-size: 22px;
+}
+
+.navItem:last-child {
+    margin-right: -20rem;
+}
+
+.sunLight {
+    margin-left: auto;
+}
+
+.country {
+    margin-right: auto;
+    font-size: 25px;
+    margin-left: 2rem;
+}
+
+.registerButton,
+.loginButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3F3F3F;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.logoText {
+    margin-left: 10px;
+}
