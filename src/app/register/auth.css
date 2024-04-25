@@ -1,0 +1,116 @@
+.wrapper{
+    height: auto;
+    width: 100vw;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.registration_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: auto;
+}
+.registration_table{
+    gap: 20px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+}
+.continue{
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1.1em;
+}
+.main_text{
+    font-size: 2em;
+}
+.registration_table >h2{
+    text-align: center;
+}
+.registration_table >button{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 5px;
+    text-align: start;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.registration_table >button:hover{
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+.stages_container{
+    display: flex;
+    justify-content: space-around;
+}
+.stage{
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.stage.one{
+    background: rgba(186, 30, 30, 0.74);
+}
+
+.functional_buttons{
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.inputs_container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.inputs_table{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 10px;
+
+}
+.inputs_table > h2{
+    padding: 40px 0px 20px 0px;
+    text-align: center;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputs_table > input{
+    border-top: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.enter{
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+}
+.enter > button{
+    color: white;
+    border-radius: 15px;
+    background: #212121;
+    padding: 5px 20px;
+}

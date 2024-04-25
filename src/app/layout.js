@@ -1,5 +1,7 @@
 import { Jura } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer/Footer";
+import Nav from "@/components/Nav/Nav";
 
 const inter = Jura({ subsets: ["latin"], weights: [300, 400, 500, 600, 700] });
 
@@ -13,7 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Nav/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
