@@ -8,8 +8,8 @@ import SupportAction from '../components/Main/SupportAction/support';
 export default function Home() {
   return (
     <>
-    <HelpUkraine />
     <SupportAction />
+    <HelpUkraine />
     <Footer /></>
   );
 }

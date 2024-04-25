@@ -4,10 +4,14 @@ const SupportAction = () => {
   return (
     <div className={styles.supportActionContainer}>
       <div className={styles.contentWrapper}>
-        <span className={styles.wrapper}>
+        <div className={styles.wrapper}>
           <img src="./main-page/blaze.svg" alt="Blaze" className={styles.blazeImage} />
           <p className={styles.supportActionText}>Хочеш долучитись до збору коштів або маєш нагальну потребу, яку потрібно закрити?</p>
-        </span>
+        </div>
+        <div className={styles.wrapper2}>
+          <p className={styles.supportActionText2}>Реєструйся та долучайся</p>
+          <img src="./main-page/double-arrow.svg" alt="Double Arrow" className={styles.doubleArrowImage} />
+        </div>
       </div>
     </div>
   );
