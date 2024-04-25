@@ -62,17 +62,19 @@
 .logo {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 6rem;
 }
 
 .logoText {
     margin-left: 10px;
+    font-size: 20px;
 }
 
 .aboutus {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
+    font-size: 17px;
 }
 
 .icons {
@@ -87,7 +89,6 @@
     text-align: center;
 }
 
-/* Mobile styles */
 @media (max-width: 767px) {
     .footeremail {
         flex-direction: column;

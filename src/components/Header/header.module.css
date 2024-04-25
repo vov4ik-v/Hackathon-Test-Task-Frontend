@@ -21,10 +21,6 @@
     font-size: 22px;
 }
 
-.navItem:last-child {
-    margin-right: -20rem;
-}
-
 .sunLight {
     margin-left: auto;
 }
@@ -38,17 +34,28 @@
 .registerButton,
 .loginButton {
     padding: 10px 20px;
-    border: none;
-    background-color: #3F3F3F;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    border: 2px solid #3F3F3F;
+    margin-right: 2rem;
+}
+
+.registerButton {
+    background-color: #3F3F3F;
+}
+
+.loginButton {
+    background-color: transparent;
+    color: #3F3F3F;
 }
 
 .logo {
     display: flex;
     align-items: center;
     margin-right: 10rem;
+    margin-left: 2rem;
+    font-size: 20px;
 }
 
 .logoText {
