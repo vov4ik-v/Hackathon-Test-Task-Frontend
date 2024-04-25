@@ -1,0 +1,19 @@
+.supportActionContainer {
+  text-align: center;
+}
+
+.contentWrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
+.blazeImage {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.supportActionText {
+  font-size: 36px;
+  margin-top: 2rem;
+}
+
