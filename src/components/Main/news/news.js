@@ -10,15 +10,19 @@ const News = () => {
         </div>
         <div className={styles.newsSection}>
           <div className={styles.leftSection}>
-            <img src="/main-page/news1.svg" alt="News 1" className={styles.newsImage} />
-            <div className={styles.textBlock}>
-              <p>За крок до захоплення Києва: Буданов розкрив унікальні деталі, хто та як зупинив окупантів</p>
+            <div className={styles.imageContainer}>
+              <img src="/main-page/news1.svg" alt="News 1" className={styles.newsImage} />
+              <div className={styles.textBlock1}>
+                <p>За крок до захоплення Києва: Буданов розкрив унікальні деталі, хто та як зупинив окупантів</p>
+              </div>
             </div>
           </div>
           <div className={styles.rightSection}>
-          <img src="/main-page/news1.svg" alt="News 1" className={styles.newsImage} />
-            <div className={styles.textBlock}>
-              <p>За крок до захоплення Києва: Буданов розкрив унікальні деталі, хто та як зупинив окупантів</p>
+            <div className={styles.imageContainer}>
+              <img src="/main-page/news2.svg" alt="News 2" className={styles.newsImage} />
+              <div className={styles.textBlock2}>
+                <p>За крок до захоплення Києва: Буданов розкрив унікальні деталі, хто та як зупинив окупантів</p>
+              </div>
             </div>
           </div>
         </div>
