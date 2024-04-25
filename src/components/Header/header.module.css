@@ -61,3 +61,53 @@
 .logoText {
     margin-left: 10px;
 }
+
+@media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+      border-radius: 20px;
+    }
+  
+    .logo {
+      margin-right: 0;
+      margin-left: 0;
+      font-size: 16px;
+    }
+  
+    .logoText {
+      margin-left: 5px;
+    }
+  
+    .navList {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+    }
+  
+    .navItem {
+      margin-right: 0;
+      font-size: 18px;
+      margin-bottom: 1rem;
+    }
+  
+    .sunLight {
+      order: -1;
+      margin-bottom: 1rem;
+    }
+  
+    .country {
+      order: -1;
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .registerButton,
+    .loginButton {
+      margin-right: 0;
+      margin-bottom: 1rem;
+      padding: 8px 16px;
+    }
+  }
+  
