@@ -10,11 +10,11 @@ import News  from '../components/Main/news/news';
 export default function Home() {
   return (
     <>
-    <Header />
-    <HelpUkraine />
+    {/* <Header />
+    <HelpUkraine /> */}
     <SupportAction />
-    <News />
-    <Footer />
+    {/* <News />
+    <Footer /> */}
     </>
   );
 }

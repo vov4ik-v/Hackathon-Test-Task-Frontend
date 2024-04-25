@@ -12,6 +12,7 @@ const SupportAction = () => {
           <p className={styles.supportActionText2}>Реєструйся та долучайся</p>
           <img src="./main-page/double-arrow.svg" alt="Double Arrow" className={styles.doubleArrowImage} />
         </div>
+        <button className={styles.registerButton}>Зареєструватись</button>
       </div>
     </div>
   );
