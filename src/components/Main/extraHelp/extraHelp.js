@@ -26,6 +26,8 @@ const ExtraHelp = () => {
                     </div>
                 </div>
                 <div className={styles.rightSection}>
+                    <img src="/main-page/extraHelp.svg" alt="Extra" className={styles.extraImage} />
+                    <p className={styles.learnMore}>Дізнатись більше</p>
                 </div>
             </div>
         </div>
