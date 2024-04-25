@@ -16,7 +16,7 @@ const News = () => {
             </div>
           </div>
           <div className={styles.rightSection}>
-                       <img src="/main-page/news1.svg" alt="News 1" className={styles.newsImage} />
+          <img src="/main-page/news1.svg" alt="News 1" className={styles.newsImage} />
             <div className={styles.textBlock}>
               <p>За крок до захоплення Києва: Буданов розкрив унікальні деталі, хто та як зупинив окупантів</p>
             </div>
