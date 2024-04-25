@@ -6,13 +6,15 @@ import HelpUkraine from '../components/Main/helpUkraine/helpUkraine';
 import SupportAction from '../components/Main/SupportAction/support';
 import Header from '../components/Header/Header';
 import News  from '../components/Main/news/news';
+import ExtraHelp from '../components/Main/extraHelp/extraHelp';
 
 export default function Home() {
   return (
     <>
     {/* <Header />
     <HelpUkraine /> */}
-    <SupportAction />
+    {/* <SupportAction /> */}
+    <ExtraHelp />
     {/* <News />
     <Footer /> */}
     </>
