@@ -21,13 +21,13 @@ const News = () => {
             <div className={styles.imageContainer}>
               <img src="/main-page/news2.svg" alt="News 2" className={styles.newsImage} />
               <div className={styles.textBlock2}>
-                <p>За крок до захоплення Києва: Буданов розкрив унікальні деталі, хто та як зупинив окупантів</p>
+                <p>Якщо не буде політичної заборони: які цілі в РФ можна знищити ракетами ATACMS – експерт</p>
               </div>
             </div>
             <div className={styles.imageContainer}>
               <img src="/main-page/news3.svg" alt="News 2" className={styles.newsImage} />
-              <div className={styles.textBlock3}>
-                <p>За крок до захоплення Києва: Буданов розкрив унікальні деталі, хто та як зупинив окупантів</p>
+              <div className={styles.textBlock2}>
+                <p>"Страшно, коли гупає дуже близько. Але ми вже і до цього звикли".</p>
               </div>
             </div>
           </div>
