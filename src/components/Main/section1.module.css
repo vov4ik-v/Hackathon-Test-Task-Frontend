@@ -1,0 +1,44 @@
+.section1Container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section1Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .section1Title {
+    font-size: 48px;
+  }
+  
+  .section1Image {
+    margin-left: 20px;
+  }
+  
+  .section1LocateImage {
+    margin-left: 10px;
+  }
+  
+  .section1Footer {
+    margin-top: 20px;
+  }
+  
+  .section1Description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  
+  .section1Square {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e6e6e6;
+  }
+  
+  .section1SquareText {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
