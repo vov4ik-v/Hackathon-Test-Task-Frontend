@@ -2,7 +2,7 @@ import styles from './footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <div className={styles.footer}>
       <div className={styles.footerinfo}>
         <div className={styles.footeremail}>
           <div className={styles.footeremail1}>
@@ -19,14 +19,24 @@ const Footer = () => {
               Допомога в дії
             </div>
           </div>
-          <div className={styles.aboutus}></div>
-          <div className={styles.icons}></div>
+          <div className={styles.aboutus}>
+            <p>Про нас</p>
+            <p>Зареєструватись</p>
+            <p>Потреби</p>
+            <p>FAQ</p>
+          </div>
+          <div className={styles.icons}>
+            <img src="/instagram.svg" alt="Instagram" />
+            <img src="/facebook.svg" alt="Instagram" />
+            <img src="/x.svg" alt="Instagram" />
+            <img src="/linkedin.svg" alt="Instagram" />
+          </div>
         </div>
       </div>
       <div className={styles.content}>
         <p>Всі права захищено</p>
       </div>
-    </footer>
+    </div>
   );
 };
 

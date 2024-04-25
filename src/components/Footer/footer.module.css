@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     height: 35%;
-    background-color: #ad7070;
+    background-color: rgb(175, 131, 131);
     position: fixed;
     bottom: -20px;
 }
@@ -37,18 +37,45 @@
     width: 90%;
     margin: 0 auto;
     margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 10rem;
 }
+
 
 .logo {
     display: flex;
     align-items: center;
-  }
-  
-  .logoText {
+    margin-right: -40rem;
+}
+
+.logoText {
     margin-left: 10px;
+    font-size: 25px;
+}
+
+.aboutus {
     font-size: 20px;
-  }
-  
+    line-height: 28px;
+}
+
+.aboutus p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons img:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
 .content {
     display: flex;
     justify-content: center;
@@ -64,7 +91,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 1px; 
+    height: 1px;
     background-color: black;
 }
 
@@ -75,6 +102,6 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 1px; 
+    height: 1px;
     background-color: black;
 }
