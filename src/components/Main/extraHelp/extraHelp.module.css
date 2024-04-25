@@ -45,12 +45,28 @@
 .extraImage {
     width: 80%;
     margin-top: 2rem;
-    border-radius: 15%
+    border-radius: 15%;
 }
 
-.learnMore {
-    font-size: 24px;
+.learnMoreContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     margin-top: 1rem;
+}
+
+.learnMoreText {
+    font-size: 24px;
+    margin-right: 1rem;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #212121;
+}
+
+.arrowIcon {
+    width: 24px;
+    height: 24px;
+    fill: #212121;
 }
 
 .quote {
@@ -60,10 +76,11 @@
 
 .quoteText {
     font-size: 96px;
+    margin-top: 2rem;
 }
 
 .quoteContent {
     font-size: 24px;
     margin-left: 20px;
-    margin-top: 4rem;
+    margin-top: 10rem;
 }
