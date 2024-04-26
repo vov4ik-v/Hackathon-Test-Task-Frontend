@@ -1,8 +1,17 @@
 .section1 {
   display: flex;
   align-items: center;
+  justify-content: space-between; 
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
 }
 
 .firstLine {
-  font-size: 48px;
+  font-size: 24px;
+  width: 60%;
+}
+
+.image {
+  max-width: 40%;
 }
