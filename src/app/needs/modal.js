@@ -11,10 +11,16 @@ const Modal = () => {
     const [inputValue3, setInputValue3] = useState('');
     const [inputValue4, setInputValue4] = useState('');
     const [inputValue5, setInputValue5] = useState('');
+    const [inputValue6, setInputValue6] = useState('');
+    const [inputValue7, setInputValue7] = useState('');
 
     const handleOptionClick1 = (option) => {
         setSelectedOption1(option);
         setIsDropdownOpen1(false);
+        // Сховати друге меню при виборі опції "Гуманітарна допомога"
+        if (option === 'Гуманітарна допомога') {
+            setIsDropdownOpen2(false);
+        }
     };
 
     const handleOptionClick2 = (option) => {
@@ -52,93 +58,104 @@ const Modal = () => {
                 )}
             </div>
             {selectedOption1 === 'Збір' && (
-                <>
-                    <div className={styles.inputContainer}>
-                        <input
-                            type="text"
-                            value={inputValue1}
-                            onChange={(e) => setInputValue1(e.target.value)}
-                            placeholder="Input 1"
-                            className={styles.input}
-                        />
-                        <input
-                            type="text"
-                            value={inputValue2}
-                            onChange={(e) => setInputValue2(e.target.value)}
-                            placeholder="Input 2"
-                            className={styles.input}
-                        />
-                        <input
-                            type="text"
-                            value={inputValue3}
-                            onChange={(e) => setInputValue3(e.target.value)}
-                            placeholder="Input 3"
-                            className={styles.input}
-                        />
-                        <input
-                            type="text"
-                            value={inputValue4}
-                            onChange={(e) => setInputValue4(e.target.value)}
-                            placeholder="Input 4"
-                            className={styles.input}
-                        />
-                        <input
-                            type="text"
-                            value={inputValue5}
-                            onChange={(e) => setInputValue5(e.target.value)}
-                            placeholder="Input 5"
-                            className={styles.input}
-                        />
+                <div className={styles.inputContainer}>
+                    <input
+                        type="text"
+                        value={inputValue1}
+                        onChange={(e) => setInputValue1(e.target.value)}
+                        placeholder="Input 1"
+                        className={styles.input}
+                    />
+                    <input
+                        type="text"
+                        value={inputValue2}
+                        onChange={(e) => setInputValue2(e.target.value)}
+                        placeholder="Input 2"
+                        className={styles.input}
+                    />
+                    <input
+                        type="text"
+                        value={inputValue3}
+                        onChange={(e) => setInputValue3(e.target.value)}
+                        placeholder="Input 3"
+                        className={styles.input}
+                    />
+                    <input
+                        type="text"
+                        value={inputValue4}
+                        onChange={(e) => setInputValue4(e.target.value)}
+                        placeholder="Input 4"
+                        className={styles.input}
+                    />
+                    <input
+                        type="text"
+                        value={inputValue5}
+                        onChange={(e) => setInputValue5(e.target.value)}
+                        placeholder="Input 5"
+                        className={styles.input}
+                    />
+                </div>
+            )}
+            {selectedOption1 === 'Гуманітарна допомога' && (
+                <div className={styles.inputContainer}>
+                    <input
+                        type="text"
+                        value={inputValue1}
+                        onChange={(e) => setInputValue1(e.target.value)}
+                        placeholder="Input 1"
+                        className={styles.input}
+                    />
+                    <input
+                        type="text"
+                        value={inputValue2}
+                        onChange={(e) => setInputValue2(e.target.value)}
+                        placeholder="Input 2"
+                        className={styles.input}
+                    />
+                    <input
+                        type="text"
+                        value={inputValue3}
+                        onChange={(e) => setInputValue3(e.target.value)}
+                        placeholder="Input 3"
+                        className={styles.input}
+                    />
+                </div>
+            )}
+            {selectedOption1 === 'Збір' && (
+                <div className={styles.selectWrapper}>
+                    <div
+                        className={styles.selectedOption}
+                        onClick={() => setIsDropdownOpen2(!isDropdownOpen2)}
+                    >
+                        {selectedOption2 || 'Реквізити'}
+                        <img src="/arrow.svg" alt="Arrow" className={styles.arrowIcon} />
                     </div>
-                    <div className={styles.selectWrapper}>
-                        <div
-                            className={styles.selectedOption}
-                            onClick={() => setIsDropdownOpen2(!isDropdownOpen2)}
-                        >
-                            {selectedOption2 || 'Реквізити'}
-                            <img src="/arrow.svg" alt="Arrow" className={styles.arrowIcon} />
+                    {isDropdownOpen2 && (
+                        <div className={styles.inputContainer}>
+                            <input
+                                type="text"
+                                value={inputValue1}
+                                onChange={(e) => setInputValue1(e.target.value)}
+                                placeholder="Input 1"
+                                className={styles.input}
+                            />
+                            <input
+                                type="text"
+                                value={inputValue2}
+                                onChange={(e) => setInputValue2(e.target.value)}
+                                placeholder="Input 2"
+                                className={styles.input}
+                            />
+                            <input
+                                type="text"
+                                value={inputValue3}
+                                onChange={(e) => setInputValue3(e.target.value)}
+                                placeholder="Input 3"
+                                className={styles.input}
+                            />
                         </div>
-                        {isDropdownOpen2 && (
-                            <div className={styles.inputContainer}>
-                                <input
-                                    type="text"
-                                    value={inputValue1}
-                                    onChange={(e) => setInputValue1(e.target.value)}
-                                    placeholder="Input 1"
-                                    className={styles.input}
-                                />
-                                <input
-                                    type="text"
-                                    value={inputValue2}
-                                    onChange={(e) => setInputValue2(e.target.value)}
-                                    placeholder="Input 2"
-                                    className={styles.input}
-                                />
-                                <input
-                                    type="text"
-                                    value={inputValue3}
-                                    onChange={(e) => setInputValue3(e.target.value)}
-                                    placeholder="Input 3"
-                                    className={styles.input}
-                                />
-                                <input
-                                    type="text"
-                                    value={inputValue4}
-                                    onChange={(e) => setInputValue4(e.target.value)}
-                                    placeholder="Input 4"
-                                    className={styles.input}
-                                />
-                                <input
-                                    type="text"
-                                    value={inputValue5}
-                                    onChange={(e) => setInputValue5(e.target.value)}
-                                    placeholder="Input 5"
-                                    className={styles.input}
-                                />
-                            </div>
-                        )}
-                    </div>
-                </>
+                    )}
+                </div>
             )}
         </div>
     );
