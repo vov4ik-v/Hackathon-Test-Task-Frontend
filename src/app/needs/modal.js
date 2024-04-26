@@ -6,18 +6,22 @@ const Modal = () => {
     const [selectedOption2, setSelectedOption2] = useState('');
     const [isDropdownOpen1, setIsDropdownOpen1] = useState(false);
     const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
-    const [inputValue1, setInputValue1] = useState('');
-    const [inputValue2, setInputValue2] = useState('');
-    const [inputValue3, setInputValue3] = useState('');
-    const [inputValue4, setInputValue4] = useState('');
-    const [inputValue5, setInputValue5] = useState('');
-    const [inputValue6, setInputValue6] = useState('');
-    const [inputValue7, setInputValue7] = useState('');
+    const [inputValue11, setInputValue11] = useState('');
+    const [inputValue12, setInputValue12] = useState('');
+    const [inputValue13, setInputValue13] = useState('');
+    const [inputValue14, setInputValue14] = useState('');
+    const [inputValue15, setInputValue15] = useState('');
+    const [inputValue21, setInputValue21] = useState('');
+    const [inputValue22, setInputValue22] = useState('');
+    const [inputValue23, setInputValue23] = useState('');
+    const [inputValue31, setInputValue31] = useState('');
+    const [inputValue32, setInputValue32] = useState('');
+    const [inputValue33, setInputValue33] = useState('');
+
 
     const handleOptionClick1 = (option) => {
         setSelectedOption1(option);
         setIsDropdownOpen1(false);
-        // Сховати друге меню при виборі опції "Гуманітарна допомога"
         if (option === 'Гуманітарна допомога') {
             setIsDropdownOpen2(false);
         }
@@ -61,37 +65,37 @@ const Modal = () => {
                 <div className={styles.inputContainer}>
                     <input
                         type="text"
-                        value={inputValue1}
-                        onChange={(e) => setInputValue1(e.target.value)}
-                        placeholder="Input 1"
+                        value={inputValue11}
+                        onChange={(e) => setInputValue11(e.target.value)}
+                        placeholder="Input 11"
                         className={styles.input}
                     />
                     <input
                         type="text"
-                        value={inputValue2}
-                        onChange={(e) => setInputValue2(e.target.value)}
-                        placeholder="Input 2"
+                        value={inputValue12}
+                        onChange={(e) => setInputValue12(e.target.value)}
+                        placeholder="Input 12"
                         className={styles.input}
                     />
                     <input
                         type="text"
-                        value={inputValue3}
-                        onChange={(e) => setInputValue3(e.target.value)}
-                        placeholder="Input 3"
+                        value={inputValue13}
+                        onChange={(e) => setInputValue13(e.target.value)}
+                        placeholder="Input 13"
                         className={styles.input}
                     />
                     <input
                         type="text"
-                        value={inputValue4}
-                        onChange={(e) => setInputValue4(e.target.value)}
-                        placeholder="Input 4"
+                        value={inputValue14}
+                        onChange={(e) => setInputValue14(e.target.value)}
+                        placeholder="Input 14"
                         className={styles.input}
                     />
                     <input
                         type="text"
-                        value={inputValue5}
-                        onChange={(e) => setInputValue5(e.target.value)}
-                        placeholder="Input 5"
+                        value={inputValue15}
+                        onChange={(e) => setInputValue15(e.target.value)}
+                        placeholder="Input 15"
                         className={styles.input}
                     />
                 </div>
@@ -100,23 +104,23 @@ const Modal = () => {
                 <div className={styles.inputContainer}>
                     <input
                         type="text"
-                        value={inputValue1}
-                        onChange={(e) => setInputValue1(e.target.value)}
-                        placeholder="Input 1"
+                        value={inputValue21}
+                        onChange={(e) => setInputValue21(e.target.value)}
+                        placeholder="Input 21"
                         className={styles.input}
                     />
                     <input
                         type="text"
-                        value={inputValue2}
-                        onChange={(e) => setInputValue2(e.target.value)}
-                        placeholder="Input 2"
+                        value={inputValue22}
+                        onChange={(e) => setInputValue22(e.target.value)}
+                        placeholder="Input 22"
                         className={styles.input}
                     />
                     <input
                         type="text"
-                        value={inputValue3}
-                        onChange={(e) => setInputValue3(e.target.value)}
-                        placeholder="Input 3"
+                        value={inputValue23}
+                        onChange={(e) => setInputValue23(e.target.value)}
+                        placeholder="Input 23"
                         className={styles.input}
                     />
                 </div>
@@ -134,23 +138,23 @@ const Modal = () => {
                         <div className={styles.inputContainer}>
                             <input
                                 type="text"
-                                value={inputValue1}
-                                onChange={(e) => setInputValue1(e.target.value)}
-                                placeholder="Input 1"
+                                value={inputValue31}
+                                onChange={(e) => setInputValue31(e.target.value)}
+                                placeholder="Input 31"
                                 className={styles.input}
                             />
                             <input
                                 type="text"
-                                value={inputValue2}
-                                onChange={(e) => setInputValue2(e.target.value)}
-                                placeholder="Input 2"
+                                value={inputValue32}
+                                onChange={(e) => setInputValue32(e.target.value)}
+                                placeholder="Input 32"
                                 className={styles.input}
                             />
                             <input
                                 type="text"
-                                value={inputValue3}
-                                onChange={(e) => setInputValue3(e.target.value)}
-                                placeholder="Input 3"
+                                value={inputValue33}
+                                onChange={(e) => setInputValue33(e.target.value)}
+                                placeholder="Input 33"
                                 className={styles.input}
                             />
                         </div>
