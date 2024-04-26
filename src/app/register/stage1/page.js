@@ -88,9 +88,13 @@ export default function Registration({ history }) {
                                         onChange={handleInputChange}
                                         required
                                     />
+                                    <button type="button" className="login-with-google-btn" >
+                                        Швидка авторизація
+                                    </button>
                                 </div>
 
                             </div>
+
                             <div className='functional_buttons'>
                                 <Link href='/register'>Назад</Link>
                                 <button className='continue' type="submit">Далі</button>
