@@ -1,10 +1,13 @@
 .section1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
   width: 80%;
   margin: 0 auto;
   margin-top: 5rem;
+}
+
+.section11 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
 }
 
 .firstLine {
@@ -12,6 +15,45 @@
   width: 60%;
 }
 
-.image {
-  max-width: 40%;
+
+.bottomText {
+  font-size: 96px;
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+.section12 {
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+
+}
+
+.textBesideImage {
+  font-size: 96px;
+  margin-left: 30rem;
+  color: red;
+  position: relative;
+}
+
+.registerButton {
+  font-weight: 500;
+  font-size: 24px;
+  border-radius: 15px;
+  padding: 10px 18px 12px 18px;
+  margin-top: 3rem;
+  background-color: #3F3F3F;
+  color: white;
+  border: none;
+  position: absolute;
+  top: 7rem;
+  margin-left: -12rem;
+}
+
+.endedText {
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
