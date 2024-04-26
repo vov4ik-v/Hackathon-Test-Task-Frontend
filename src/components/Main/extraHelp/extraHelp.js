@@ -31,7 +31,7 @@ const ExtraHelp = () => {
                     <div className={styles.learnMoreContainer}>
                         <div className={styles.learnMore}>
                             <p className={styles.learnMoreText}>Дізнатись більше</p>
-                            <img src="/main-page/arrow.svg" alt="Arrow" className={styles.arrowIcon} />
+                            <img src="/main-page/arrow2.svg" alt="Arrow" className={styles.arrowIcon} />
                         </div>
                     </div>
                 </div>
