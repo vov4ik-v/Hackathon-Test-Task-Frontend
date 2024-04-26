@@ -43,10 +43,11 @@ export default function Login(){
             <div className='registration_container'>
                 <div className='registration_table'>
                     <h2 className='main_text'>Вхід</h2>
+                    <p className='under_main_text'>Раді Вас знову вітати !</p>
                     <form onSubmit={handleSubmit}>
                         <div className='inputs_container'>
                             <div className='inputs_table'>
-                                <label>Ваш Email</label>
+                                <label className='label_under_login'>Ваш Email</label>
                                 <input
                                     type='email'
                                     name='email'
@@ -55,7 +56,7 @@ export default function Login(){
                                     onChange={handleInputChange}
                                     required
                                 />
-                                <label>Ваш пароль</label>
+                                <label className='label_under_login'>Ваш пароль</label>
                                 <input
                                     type='password'
                                     name='password'
@@ -64,8 +65,12 @@ export default function Login(){
                                     onChange={handleInputChange}
                                     required
                                 />
-                            </div>
+                                <p className='forget_password_button' ><Link href='/forget'>Забули пароль?</Link> </p>
 
+                                <button type="button" className="login-with-google-btn" >
+                                    Швидка авторизація
+                                </button>
+                               </div>
                         </div>
                         <div className='enter'>
                             {/*<Link href='/'>Повернутись на головну</Link>*/}
