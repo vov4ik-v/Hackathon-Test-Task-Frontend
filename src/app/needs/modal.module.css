@@ -20,4 +20,48 @@
     font-size: 24px;
     text-align: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.selectWrapper {
+    position: relative;
+}
+
+.selectedOption {
+    font-size: 22px;
+    padding: 10px;
+    border: 1px solid #3F3F3F;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.optionsContainer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #3F3F3F;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.option {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.option:hover {
+    background-color: #3F3F3F;
+    color: white;
+}
+
+.arrowIcon {
+    width: 20px;
+    height: 20px;
 }
