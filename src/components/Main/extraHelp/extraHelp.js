@@ -29,8 +29,10 @@ const ExtraHelp = () => {
                 <div className={styles.rightSection}>
                     <img src="/main-page/extraHelp.svg" alt="Extra" className={styles.extraImage} />
                     <div className={styles.learnMoreContainer}>
-                        <p className={styles.learnMoreText}>Дізнатись більше</p>
-                        <img src="/main-page/arrow.svg" alt="Arrow" className={styles.arrowIcon} />
+                        <div className={styles.learnMore}>
+                            <p className={styles.learnMoreText}>Дізнатись більше</p>
+                            <img src="/main-page/arrow.svg" alt="Arrow" className={styles.arrowIcon} />
+                        </div>
                     </div>
                 </div>
             </div>

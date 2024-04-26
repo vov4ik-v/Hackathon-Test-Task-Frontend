@@ -23,13 +23,13 @@
 .itemText {
     flex-grow: 1;
     font-size: 24px;
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 
 .itemNumber {
     margin-left: 10px;
     font-size: 40px;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 .title {
@@ -53,14 +53,23 @@
     align-items: center;
     justify-content: flex-end;
     margin-top: 1rem;
+    margin-left: 12rem;
+}
+
+.learnMore {
+    display: flex;
+    align-items: center;
+    border: 2px solid #212121;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 3rem;
 }
 
 .learnMoreText {
     font-size: 24px;
     margin-right: 1rem;
-    padding: 10px;
-    border-radius: 15px;
-    border: 2px solid #212121;
+    color: red;
+    padding-right: 0.5rem;
 }
 
 .arrowIcon {
@@ -76,7 +85,7 @@
 
 .quoteText {
     font-size: 96px;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .quoteContent {
