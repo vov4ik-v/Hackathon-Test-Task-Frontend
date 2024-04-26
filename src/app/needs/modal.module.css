@@ -92,7 +92,8 @@
 .inputContainer1 input:nth-child(5) {
     width: calc(100% - 10px);
     margin-right: 0;
-    height: 5rem;
+    vertical-align: top;
+    padding-bottom: 3rem;
 }
 
 .inputContainer3 {
@@ -131,8 +132,8 @@
 .inputContainer2 input:nth-child(3) {
     width: calc(100% - 10px); 
     margin-right: 0;
-    height: 5rem;
     vertical-align: top;
+    padding-bottom: 7rem;
 }
 
 .registerButton {
@@ -147,7 +148,7 @@
     margin: 0 auto;
     position: absolute;
     left: 50%;
-    bottom: 20px;
+    bottom: 1.2rem;
     transform: translateX(-50%);
   }
   

@@ -66,35 +66,35 @@ const Modal = () => {
                         type="text"
                         value={inputValue11}
                         onChange={(e) => setInputValue11(e.target.value)}
-                        placeholder="Input 11"
+                        placeholder="Назва"
                         className={styles.input}
                     />
                     <input
                         type="text"
                         value={inputValue12}
                         onChange={(e) => setInputValue12(e.target.value)}
-                        placeholder="Input 12"
+                        placeholder="Для кого"
                         className={styles.input}
                     />
                     <input
                         type="text"
                         value={inputValue13}
                         onChange={(e) => setInputValue13(e.target.value)}
-                        placeholder="Input 13"
+                        placeholder="Сума"
                         className={styles.input}
                     />
                     <input
                         type="text"
                         value={inputValue14}
                         onChange={(e) => setInputValue14(e.target.value)}
-                        placeholder="Input 14"
+                        placeholder="На що збираєте"
                         className={styles.input}
                     />
                     <input
                         type="text"
                         value={inputValue15}
                         onChange={(e) => setInputValue15(e.target.value)}
-                        placeholder="Input 15"
+                        placeholder="Опис"
                         className={styles.input}
                     />
                 </div>
@@ -105,21 +105,21 @@ const Modal = () => {
                         type="text"
                         value={inputValue21}
                         onChange={(e) => setInputValue21(e.target.value)}
-                        placeholder="Input 21"
+                        placeholder="Назва"
                         className={styles.input}
                     />
                     <input
                         type="text"
                         value={inputValue22}
                         onChange={(e) => setInputValue22(e.target.value)}
-                        placeholder="Input 22"
+                        placeholder="Місто"
                         className={styles.input}
                     />
                     <input
                         type="text"
                         value={inputValue23}
                         onChange={(e) => setInputValue23(e.target.value)}
-                        placeholder="Input 23"
+                        placeholder="Опис"
                         className={styles.input}
                     />
                 </div>
@@ -139,21 +139,21 @@ const Modal = () => {
                                 type="text"
                                 value={inputValue31}
                                 onChange={(e) => setInputValue31(e.target.value)}
-                                placeholder="Input 31"
+                                placeholder="UAH"
                                 className={styles.input}
                             />
                             <input
                                 type="text"
                                 value={inputValue32}
                                 onChange={(e) => setInputValue32(e.target.value)}
-                                placeholder="Input 32"
+                                placeholder="Номер картки"
                                 className={styles.input}
                             />
                             <input
                                 type="text"
                                 value={inputValue33}
                                 onChange={(e) => setInputValue33(e.target.value)}
-                                placeholder="Input 33"
+                                placeholder="Посилання на монобанк"
                                 className={styles.input}
                             />
                         </div>
@@ -166,7 +166,7 @@ const Modal = () => {
                     display: selectedOption1 ? 'block' : 'none',
                 }}
             >
-                Зареєструватись
+                Зареєструвати
             </button>
         </div>
     );
