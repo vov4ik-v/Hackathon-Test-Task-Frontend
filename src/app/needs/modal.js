@@ -15,7 +15,6 @@ const Modal = () => {
     const handleOptionClick1 = (option) => {
         setSelectedOption1(option);
         setIsDropdownOpen1(false);
-        setIsDropdownOpen2(option === 'Збір');
     };
 
     const handleOptionClick2 = (option) => {
@@ -100,19 +99,42 @@ const Modal = () => {
                             <img src="/arrow.svg" alt="Arrow" className={styles.arrowIcon} />
                         </div>
                         {isDropdownOpen2 && (
-                            <div className={styles.optionsContainer} style={{ zIndex: 1 }}>
-                                <div
-                                    className={styles.option}
-                                    onClick={() => handleOptionClick2('Option 1')}
-                                >
-                                    Option 1
-                                </div>
-                                <div
-                                    className={styles.option}
-                                    onClick={() => handleOptionClick2('Option 2')}
-                                >
-                                    Option 2
-                                </div>
+                            <div className={styles.inputContainer}>
+                                <input
+                                    type="text"
+                                    value={inputValue1}
+                                    onChange={(e) => setInputValue1(e.target.value)}
+                                    placeholder="Input 1"
+                                    className={styles.input}
+                                />
+                                <input
+                                    type="text"
+                                    value={inputValue2}
+                                    onChange={(e) => setInputValue2(e.target.value)}
+                                    placeholder="Input 2"
+                                    className={styles.input}
+                                />
+                                <input
+                                    type="text"
+                                    value={inputValue3}
+                                    onChange={(e) => setInputValue3(e.target.value)}
+                                    placeholder="Input 3"
+                                    className={styles.input}
+                                />
+                                <input
+                                    type="text"
+                                    value={inputValue4}
+                                    onChange={(e) => setInputValue4(e.target.value)}
+                                    placeholder="Input 4"
+                                    className={styles.input}
+                                />
+                                <input
+                                    type="text"
+                                    value={inputValue5}
+                                    onChange={(e) => setInputValue5(e.target.value)}
+                                    placeholder="Input 5"
+                                    className={styles.input}
+                                />
                             </div>
                         )}
                     </div>
