@@ -9,13 +9,13 @@ const Modal = () => {
     const [inputValue1, setInputValue1] = useState('');
     const [inputValue2, setInputValue2] = useState('');
     const [inputValue3, setInputValue3] = useState('');
+    const [inputValue4, setInputValue4] = useState('');
+    const [inputValue5, setInputValue5] = useState('');
 
     const handleOptionClick1 = (option) => {
         setSelectedOption1(option);
         setIsDropdownOpen1(false);
-        if (option !== 'Збір') {
-            setIsDropdownOpen2(false);
-        }
+        setIsDropdownOpen2(option === 'Збір');
     };
 
     const handleOptionClick2 = (option) => {
@@ -53,38 +53,70 @@ const Modal = () => {
                 )}
             </div>
             {selectedOption1 === 'Збір' && (
-                <div className={styles.selectWrapper}>
-                    <div
-                        className={styles.selectedOption}
-                        onClick={() => setIsDropdownOpen2(!isDropdownOpen2)}
-                    >
-                        {selectedOption2 || 'Реквізити'}
-                        <img src="/arrow.svg" alt="Arrow" className={styles.arrowIcon} />
+                <>
+                    <div className={styles.inputContainer}>
+                        <input
+                            type="text"
+                            value={inputValue1}
+                            onChange={(e) => setInputValue1(e.target.value)}
+                            placeholder="Input 1"
+                            className={styles.input}
+                        />
+                        <input
+                            type="text"
+                            value={inputValue2}
+                            onChange={(e) => setInputValue2(e.target.value)}
+                            placeholder="Input 2"
+                            className={styles.input}
+                        />
+                        <input
+                            type="text"
+                            value={inputValue3}
+                            onChange={(e) => setInputValue3(e.target.value)}
+                            placeholder="Input 3"
+                            className={styles.input}
+                        />
+                        <input
+                            type="text"
+                            value={inputValue4}
+                            onChange={(e) => setInputValue4(e.target.value)}
+                            placeholder="Input 4"
+                            className={styles.input}
+                        />
+                        <input
+                            type="text"
+                            value={inputValue5}
+                            onChange={(e) => setInputValue5(e.target.value)}
+                            placeholder="Input 5"
+                            className={styles.input}
+                        />
                     </div>
-                    {isDropdownOpen2 && (
-                        <div className={styles.optionsContainer} style={{ zIndex: 1 }}>
-                            
-                            <input
-                                type="text"
-                                value={inputValue1}
-                                onChange={(e) => setInputValue1(e.target.value)}
-                                placeholder="Input 1"
-                            />
-                            <input
-                                type="text"
-                                value={inputValue2}
-                                onChange={(e) => setInputValue2(e.target.value)}
-                                placeholder="Input 2"
-                            />
-                            <input
-                                type="text"
-                                value={inputValue3}
-                                onChange={(e) => setInputValue3(e.target.value)}
-                                placeholder="Input 3"
-                            />
+                    <div className={styles.selectWrapper}>
+                        <div
+                            className={styles.selectedOption}
+                            onClick={() => setIsDropdownOpen2(!isDropdownOpen2)}
+                        >
+                            {selectedOption2 || 'Реквізити'}
+                            <img src="/arrow.svg" alt="Arrow" className={styles.arrowIcon} />
                         </div>
-                    )}
-                </div>
+                        {isDropdownOpen2 && (
+                            <div className={styles.optionsContainer} style={{ zIndex: 1 }}>
+                                <div
+                                    className={styles.option}
+                                    onClick={() => handleOptionClick2('Option 1')}
+                                >
+                                    Option 1
+                                </div>
+                                <div
+                                    className={styles.option}
+                                    onClick={() => handleOptionClick2('Option 2')}
+                                >
+                                    Option 2
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </>
             )}
         </div>
     );
