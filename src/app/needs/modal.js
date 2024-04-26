@@ -18,7 +18,6 @@ const Modal = () => {
     const [inputValue32, setInputValue32] = useState('');
     const [inputValue33, setInputValue33] = useState('');
 
-
     const handleOptionClick1 = (option) => {
         setSelectedOption1(option);
         setIsDropdownOpen1(false);
@@ -62,7 +61,7 @@ const Modal = () => {
                 )}
             </div>
             {selectedOption1 === 'Збір' && (
-                <div className={styles.inputContainer}>
+                <div className={styles.inputContainer1}>
                     <input
                         type="text"
                         value={inputValue11}
@@ -101,7 +100,7 @@ const Modal = () => {
                 </div>
             )}
             {selectedOption1 === 'Гуманітарна допомога' && (
-                <div className={styles.inputContainer}>
+                <div className={styles.inputContainer2}>
                     <input
                         type="text"
                         value={inputValue21}
@@ -135,7 +134,7 @@ const Modal = () => {
                         <img src="/arrow.svg" alt="Arrow" className={styles.arrowIcon} />
                     </div>
                     {isDropdownOpen2 && (
-                        <div className={styles.inputContainer}>
+                        <div className={styles.inputContainer3}>
                             <input
                                 type="text"
                                 value={inputValue31}
@@ -161,6 +160,14 @@ const Modal = () => {
                     )}
                 </div>
             )}
+            <button
+                className={styles.registerButton}
+                style={{
+                    display: selectedOption1 ? 'block' : 'none',
+                }}
+            >
+                Зареєструватись
+            </button>
         </div>
     );
 };
