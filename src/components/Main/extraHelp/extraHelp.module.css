@@ -1,0 +1,95 @@
+.extraHelpContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sectionsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftSection {
+    width: 50%;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #212121;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.itemText {
+    flex-grow: 1;
+    font-size: 24px;
+    padding-top: 4rem;
+}
+
+.itemNumber {
+    margin-left: 10px;
+    font-size: 40px;
+    margin-top: 3rem;
+}
+
+.title {
+    font-size: 48px;
+}
+
+.rightSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.extraImage {
+    width: 80%;
+    margin-top: 2rem;
+    border-radius: 15%;
+}
+
+.learnMoreContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    margin-left: 12rem;
+}
+
+.learnMore {
+    display: flex;
+    align-items: center;
+    border: 2px solid #212121;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 3rem;
+}
+
+.learnMoreText {
+    font-size: 24px;
+    margin-right: 1rem;
+    color: red;
+    padding-right: 0.5rem;
+}
+
+.arrowIcon {
+    width: 24px;
+    height: 24px;
+    fill: #212121;
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+}
+
+.quoteText {
+    font-size: 96px;
+    margin-top: 5rem;
+}
+
+.quoteContent {
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 10rem;
+}
