@@ -34,6 +34,8 @@ const UserPage = () => {
     const handleSaveClick = async () => {
         try {
             await updateUserInfo({ bio: userbio, name: username });
+            setUserbio(userbio);
+            setUsername(username);
             setEditing(false);
         } catch (error) {
             console.error('Error updating user info:', error);
@@ -53,6 +55,7 @@ const UserPage = () => {
                     <img src="/person2.svg" alt="Avatar" className={styles.avatar} />
                 </div>
                 <div className={styles.rightSection}>
+                    <p className={styles.username}>{username}</p>
                     <p className={styles.usermail}>{usermail}</p>
                     {editing ? (
                         <div>
