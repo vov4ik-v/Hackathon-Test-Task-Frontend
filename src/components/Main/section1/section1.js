@@ -18,7 +18,7 @@ const Section1 = () => {
         </div>
         <div className={styles.textBesideImage}>
           <span style={{ color: 'black' }}>В</span> ДІЇ
-          <button className={styles.registerButton}>Зареєструватись</button>
+          <button className={styles.registerButton}>Перейти до потреб</button>
         </div>
       </div>
       <div className={styles.endedText}>
