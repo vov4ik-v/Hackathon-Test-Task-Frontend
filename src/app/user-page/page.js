@@ -59,30 +59,39 @@ const UserPage = () => {
                     <img src="/person2.svg" alt="Avatar" className={styles.avatar} />
                 </div>
                 <div className={styles.rightSection}>
-                    <p className={styles.username}>{username}</p>
-                    <p className={styles.usermail}>{usermail}</p>
                     {editing ? (
-                        <div>
-                            <input
-                                type="text"
-                                value={editedUsername}
-                                onChange={(e) => setEditedUsername(e.target.value)}
-                            />
-                            <input
-                                type="text"
-                                value={editedUserbio}
-                                onChange={(e) => setEditedUserbio(e.target.value)}
-                            />
-                            <button onClick={handleSaveClick}>Зберегти</button>
+                        <div className={styles.inputs}>
+                            <div>
+                                <p className={styles.inputLabel}>Ваше ім’я</p>
+                                <input
+                                    type="text"
+                                    value={editedUsername}
+                                    onChange={(e) => setEditedUsername(e.target.value)}
+                                    className={styles.inputField}
+                                />
+                            </div>
+                            <div>
+                                <p className={styles.inputLabel}>Про вас</p>
+                                <input
+                                    type="text"
+                                    value={editedUserbio}
+                                    onChange={(e) => setEditedUserbio(e.target.value)}
+                                    className={styles.inputField}
+                                />
+                            </div>
+                            <button className={styles.saveButton} onClick={handleSaveClick}>Зберегти</button>
                         </div>
+
                     ) : (
                         <div>
+                            <p className={styles.username}>{username}</p>
+                            <p className={styles.usermail}>{usermail}</p>
                             {userbio && (
                                 <div className={styles.volunteerInfo}>
                                     <p>{userbio}</p>
                                 </div>
                             )}
-                            <button onClick={handleEditClick}>Редагувати</button>
+                            <button className={styles.saveButton} onClick={handleEditClick}>Редагувати</button>
                         </div>
                     )}
                 </div>
