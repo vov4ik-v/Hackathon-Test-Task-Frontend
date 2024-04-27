@@ -161,3 +161,26 @@
     margin-left: 20px;
     margin-top: 10rem;
 }
+
+.footeremail2 {
+    display: flex;
+    justify-content: center;
+}
+
+.footeremail2 input[type="text"] {
+    border-radius: 10px;
+    width: 30%;
+    border-width: 0px 0px 1px 0px;
+    border-color: #000;
+    padding: 15px 0 15px 15px;
+    margin-bottom: 10rem;
+    background-color: #e6e6e4;
+    background-image: url('/loop.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+.footeremail2 input {
+    padding: 8px 12px;
+    font-size: 28px;
+}

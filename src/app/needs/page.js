@@ -32,6 +32,11 @@ const Needs = () => {
                     <img src="/flag.svg" alt="Flag" className={styles.flagImage} />
                 </div>
             </div>
+            <div>
+            <div className={styles.footeremail2}>
+            <input type="text" placeholder="" />
+             </div>
+             </div>
             <div className={styles.extraHelpContainer}>
                 <div className={styles.titleContainer}>
                     <h2 className={styles.title}>Збір на тактичні рюкзаки</h2>
