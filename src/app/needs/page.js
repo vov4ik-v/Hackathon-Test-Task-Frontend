@@ -6,7 +6,7 @@ import styles from './needs.module.css';
 
 const Needs = () => {
     const [showModal, setShowModal] = useState(false);
-    const [activeContent, setActiveContent] = useState(1); // Починаємо з першого контенту
+    const [activeContent, setActiveContent] = useState(1);
 
     const toggleModal = () => {
         setShowModal(!showModal);
@@ -90,56 +90,56 @@ const Needs = () => {
                     )}
                     {activeContent === 2 && (
                         <div>
-                        <div className={styles.titleContainer}>
-                            <h2 className={styles.title}>Гуманітарна допомога</h2>
-                            <img src="/mark.svg" alt="Mark" className={styles.markImage} />
-                        </div>
-                        <div className={styles.divided}>
-                            <div className={styles.leftSection1}>
-                                <div className={styles.item}>
-                                    <span className={styles.itemText}>Місто</span>
-                                    <span className={styles.itemNumber}>Львів</span>
-                                </div>
-                                <div className={styles.quote}>
-                                    <span className={styles.quoteText}>"</span>
-                                    <p className={styles.quoteContent}>Ми збираємо продукти харчування, медичні засоби,
-                                     одяг та інші необхідні ресурси для тих, хто втратив все через воєнні дії.</p>
-                                </div>
+                            <div className={styles.titleContainer}>
+                                <h2 className={styles.title}>Гуманітарна допомога</h2>
+                                <img src="/mark.svg" alt="Mark" className={styles.markImage} />
                             </div>
-                            <div className={styles.rightSection1}>
-                                <img src="/main-page/extraHelp.svg" alt="Extra" className={styles.extraImage} />
-                                <div className={styles.learnMoreContainer}>
-                                    <div className={styles.learnMore}>
-                                        <p className={styles.learnMoreText}>Дізнатись більше</p>
-                                        <img src="/main-page/arrow2.svg" alt="Arrow" className={styles.arrowIcon} />
+                            <div className={styles.divided}>
+                                <div className={styles.leftSection1}>
+                                    <div className={styles.item}>
+                                        <span className={styles.itemText}>Місто</span>
+                                        <span className={styles.itemNumber}>Львів</span>
+                                    </div>
+                                    <div className={styles.quote}>
+                                        <span className={styles.quoteText}>"</span>
+                                        <p className={styles.quoteContent}>Ми збираємо продукти харчування, медичні засоби,
+                                            одяг та інші необхідні ресурси для тих, хто втратив все через воєнні дії.</p>
+                                    </div>
+                                </div>
+                                <div className={styles.rightSection1}>
+                                    <img src="/main-page/extraHelp.svg" alt="Extra" className={styles.extraImage} />
+                                    <div className={styles.learnMoreContainer}>
+                                        <div className={styles.learnMore}>
+                                            <p className={styles.learnMoreText}>Дізнатись більше</p>
+                                            <img src="/main-page/arrow2.svg" alt="Arrow" className={styles.arrowIcon} />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     )}
                     {activeContent === 3 && (
                         <div>
-                        <div className={styles.divided1}>
-                            <div className={styles.leftSection1}>
-                                <div className={styles.item}>
-                                    <span className={styles.itemText1}>Павленко Максим Олегович</span>
+                            <div className={styles.divided1}>
+                                <div className={styles.leftSection1}>
+                                    <div className={styles.item}>
+                                        <span className={styles.itemText1}>Павленко Максим Олегович</span>
+                                    </div>
+                                    <div className={styles.quote}>
+                                        <span className={styles.quoteText}>"</span>
+                                        <p className={styles.quoteContent}>психолог з великим досвідом та глибоким
+                                            розумінням людської психіки. Я відомий своєю ефективністю в роботі з тривожністю,
+                                            депресією, стресом та відносинами, та завжди готовий допомогти своїм клієнтам
+                                            знайти внутрішню гармонію та розвити стратегії самовдосконалення.</p>
+                                    </div>
                                 </div>
-                                <div className={styles.quote}>
-                                    <span className={styles.quoteText}>"</span>
-                                    <p className={styles.quoteContent}>психолог з великим досвідом та глибоким
-                                     розумінням людської психіки. Я відомий своєю ефективністю в роботі з тривожністю,
-                                      депресією, стресом та відносинами, та завжди готовий допомогти своїм клієнтам
-                                       знайти внутрішню гармонію та розвити стратегії самовдосконалення.</p>
-                                </div>
-                            </div>
-                            <div className={styles.rightSection1}>
-                                <img src="person1.svg" alt="Extra" className={styles.extraImage} />
-                                <div className={styles.learnMoreContainer}>
+                                <div className={styles.rightSection1}>
+                                    <img src="person1.svg" alt="Extra" className={styles.extraImage} />
+                                    <div className={styles.learnMoreContainer}>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     )}
                 </div>
             </div>
