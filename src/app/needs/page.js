@@ -6,7 +6,7 @@ import styles from './needs.module.css';
 
 const Needs = () => {
     const [showModal, setShowModal] = useState(false);
-    const [activeContent, setActiveContent] = useState(1); // починаємо з першого контенту
+    const [activeContent, setActiveContent] = useState(1); // Починаємо з першого контенту
 
     const toggleModal = () => {
         setShowModal(!showModal);
@@ -47,48 +47,43 @@ const Needs = () => {
                 <button className={activeContent === 2 ? styles.activeButton : styles.button} onClick={() => handleContentChange(2)}>Контент 2</button>
                 <button className={activeContent === 3 ? styles.activeButton : styles.button} onClick={() => handleContentChange(3)}>Контент 3</button>
             </div>
-            <div className={styles.extraHelpContainer1}>
-                <div className={styles.sectionsContainer1}>
+            <div className={styles.extraHelpContainer}>
+                <div className={styles.sectionsContainer}>
                     {activeContent === 1 && (
                         <div>
-                                            <div className={styles.sectionsContainer}>
-                <div className={styles.titleContainer}>
-                    <h2 className={styles.title}>Збір на тактичні рюкзаки</h2>
-                    <img src="/mark.svg" alt="Mark" className={styles.markImage} />
-                </div>
-                    {/* <div className={styles.rightSection1}>
-                        <img src="/main-page/extraHelp.svg" alt="Extra" className={styles.extraImage} />
-                        <div className={styles.learnMoreContainer}>
-                            <div className={styles.learnMore}>
-                                <p className={styles.learnMoreText}>Дізнатись більше</p>
-                                <img src="/main-page/arrow2.svg" alt="Arrow" className={styles.arrowIcon} />
+                            <div className={styles.titleContainer}>
+                                <h2 className={styles.title}>Збір на тактичні рюкзаки</h2>
+                                <img src="/mark.svg" alt="Mark" className={styles.markImage} />
                             </div>
-                        </div>
-                    </div> */}
-                    <div className={styles.leftSection1}>
-                        <div className={styles.item}>
-                            <span className={styles.itemText}>потрібна сума</span>
-                            <span className={styles.itemNumber}>100 000 +</span>
-                        </div>
-                        <div className={styles.item}>
-                            <span className={styles.itemText}>тактичні рюкзаки</span>
-                            <span className={styles.itemNumber}>15</span>
-                        </div>
-                        <div className={styles.item}>
-                            <span className={styles.itemText}>Бригада</span>
-                            <span className={styles.itemNumber}>128</span>
-                        </div>
-                        <div className={styles.quote}>
-                            <span className={styles.quoteText}>"</span>
-                            <p className={styles.quoteContent}>
-                                Ми, 128 бригада, стоїмо на передовій, де кожен день зустрічаємося з різноманітними викликами та труднощами. У зв'язку з постійною потребою у підтримці, ми звертаємося до вас з проханням про необхідність рюкзаків.
-                            </p>
-                        </div>
-                    </div>
-
-                    
-
-                </div>
+                            <div className={styles.leftSection1}>
+                                <div className={styles.item}>
+                                    <span className={styles.itemText}>потрібна сума</span>
+                                    <span className={styles.itemNumber}>100 000 +</span>
+                                </div>
+                                <div className={styles.item}>
+                                    <span className={styles.itemText}>тактичні рюкзаки</span>
+                                    <span className={styles.itemNumber}>15</span>
+                                </div>
+                                <div className={styles.item}>
+                                    <span className={styles.itemText}>Бригада</span>
+                                    <span className={styles.itemNumber}>128</span>
+                                </div>
+                                <div className={styles.quote}>
+                                    <span className={styles.quoteText}>"</span>
+                                    <p className={styles.quoteContent}>
+                                        Ми, 128 бригада, стоїмо на передовій, де кожен день зустрічаємося з різноманітними викликами та труднощами. У зв'язку з постійною потребою у підтримці, ми звертаємося до вас з проханням про необхідність рюкзаків.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className={styles.rightSection1}>
+                                <img src="/main-page/extraHelp.svg" alt="Extra" className={styles.extraImage} />
+                                <div className={styles.learnMoreContainer}>
+                                    <div className={styles.learnMore}>
+                                        <p className={styles.learnMoreText}>Дізнатись більше</p>
+                                        <img src="/main-page/arrow2.svg" alt="Arrow" className={styles.arrowIcon} />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     )}
                     {activeContent === 2 && (
