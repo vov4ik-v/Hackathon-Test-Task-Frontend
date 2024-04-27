@@ -10,3 +10,35 @@ export async function login(body) {
     const response = await axios.post(`${API_BASE_URL}/auth/signin`, body);
     return response.data;
 }
+
+export async function registerFundraising(body, token) {
+    const config = {
+        headers: {
+            Authorization: ` ${token}`
+        }
+    };
+
+    try {
+        const response = await axios.post(`${API_BASE_URL}/needs/create/activeFundraising`, body, config);
+        return response.data;
+    } catch (error) {
+        console.error('Error registering fundraising:', error);
+        throw error;
+    }
+}
+
+export async function registerHumanitarianAid(body, token) {
+    const config = {
+        headers: {
+            Authorization: `${token}`
+        }
+    };
+
+    try {
+        const response = await axios.post(`${API_BASE_URL}/needs/create/humanitarianAid`, body, config);
+        return response.data;
+    } catch (error) {
+        console.error('Error registering fundraising:', error);
+        throw error;
+    }
+}

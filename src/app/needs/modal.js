@@ -1,23 +1,76 @@
 import React, { useState } from 'react';
 import styles from './modal.module.css';
+import {registerFundraising, registerHumanitarianAid} from "@/util/api";
 
 const Modal = () => {
     const [selectedOption1, setSelectedOption1] = useState('');
     const [selectedOption2, setSelectedOption2] = useState('');
     const [isDropdownOpen1, setIsDropdownOpen1] = useState(false);
     const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
-    const [inputValue11, setInputValue11] = useState('');
-    const [inputValue12, setInputValue12] = useState('');
-    const [inputValue13, setInputValue13] = useState('');
-    const [inputValue14, setInputValue14] = useState('');
-    const [inputValue15, setInputValue15] = useState('');
-    const [inputValue21, setInputValue21] = useState('');
-    const [inputValue22, setInputValue22] = useState('');
-    const [inputValue23, setInputValue23] = useState('');
-    const [inputValue31, setInputValue31] = useState('');
-    const [inputValue32, setInputValue32] = useState('');
-    const [inputValue33, setInputValue33] = useState('');
 
+    
+
+    const [formDataFundraising, setFormDataFundraising] = useState({
+        description: "",
+        donationUrl: "",
+        forWhom: "",
+        goalName: "",
+        imageUrl: "",
+        moneyGoal: 0,
+        needyThing: ""
+
+    });
+    const [formDataHumanitarianAid, setFormDataHumanitarianAid] = useState({
+        city: "",
+        description: "",
+        imageUrl: "",
+        needName: ""
+
+    });
+    const handleInputHumanChange = event => {
+        const { name, value } = event.target;
+        console.log({name,value})
+        console.log(formDataHumanitarianAid)
+        setFormDataHumanitarianAid(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+    };
+    const handleInputChange = event => {
+        const { name, value } = event.target;
+        console.log({name,value})
+        console.log(formDataFundraising)
+        setFormDataFundraising(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+    };
+    const handleFundraising = async (event) => {
+
+        event.preventDefault();
+
+        try {
+            const token = localStorage.getItem('accessToken')
+            console.log(token)
+            const responseData = await registerFundraising(formDataFundraising, token);
+            console.log('Response data:', responseData);
+        } catch (error) {
+            console.error('Error handling fundraising:', error);
+        }
+    }
+    const handleHumanitarianAid =async (event) =>{
+        console.log('human')
+        event.preventDefault();
+
+        try {
+            const token = localStorage.getItem('accessToken')
+            console.log(token)
+            const responseData = await registerHumanitarianAid(formDataFundraising, token);
+            console.log('Response data:', responseData);
+        } catch (error) {
+            console.error('Error handling fundraising:', error);
+        }
+    }
     const handleOptionClick1 = (option) => {
         setSelectedOption1(option);
         setIsDropdownOpen1(false);
@@ -64,36 +117,41 @@ const Modal = () => {
                 <div className={styles.inputContainer1}>
                     <input
                         type="text"
-                        value={inputValue11}
-                        onChange={(e) => setInputValue11(e.target.value)}
+                        name="goalName"
+                        value={formDataFundraising.goalName}
+                        onChange={handleInputChange}
                         placeholder="Назва"
                         className={styles.input}
                     />
                     <input
                         type="text"
-                        value={inputValue12}
-                        onChange={(e) => setInputValue12(e.target.value)}
+                        name='forWhom'
+                        value={formDataFundraising.forWhom}
+                        onChange={handleInputChange}
                         placeholder="Для кого"
                         className={styles.input}
                     />
                     <input
                         type="text"
-                        value={inputValue13}
-                        onChange={(e) => setInputValue13(e.target.value)}
+                        name='moneyGoal'
+                        value={formDataFundraising.moneyGoal}
+                        onChange={handleInputChange}
                         placeholder="Сума"
                         className={styles.input}
                     />
                     <input
                         type="text"
-                        value={inputValue14}
-                        onChange={(e) => setInputValue14(e.target.value)}
+                        name='needyThing'
+                        value={formDataFundraising.needyThing}
+                        onChange={handleInputChange}
                         placeholder="На що збираєте"
                         className={styles.input}
                     />
                     <input
                         type="text"
-                        value={inputValue15}
-                        onChange={(e) => setInputValue15(e.target.value)}
+                        name='description'
+                        value={formDataFundraising.description}
+                        onChange={handleInputChange}
                         placeholder="Опис"
                         className={styles.input}
                     />
@@ -103,22 +161,25 @@ const Modal = () => {
                 <div className={styles.inputContainer2}>
                     <input
                         type="text"
-                        value={inputValue21}
-                        onChange={(e) => setInputValue21(e.target.value)}
+                        name='needName'
+                        value={formDataHumanitarianAid.needName}
+                        onChange={handleInputHumanChange}
                         placeholder="Назва"
                         className={styles.input}
                     />
                     <input
                         type="text"
-                        value={inputValue22}
-                        onChange={(e) => setInputValue22(e.target.value)}
+                        name='city'
+                        value={formDataHumanitarianAid.city}
+                        onChange={handleInputHumanChange}
                         placeholder="Місто"
                         className={styles.input}
                     />
                     <input
                         type="text"
-                        value={inputValue23}
-                        onChange={(e) => setInputValue23(e.target.value)}
+                        name='description'
+                        value={formDataHumanitarianAid.description}
+                        onChange={handleInputHumanChange}
                         placeholder="Опис"
                         className={styles.input}
                     />
@@ -137,22 +198,23 @@ const Modal = () => {
                         <div className={styles.inputContainer3}>
                             <input
                                 type="text"
-                                value={inputValue31}
-                                onChange={(e) => setInputValue31(e.target.value)}
+                                value={formDataFundraising.moneyGoal}
+                                onChange={handleInputChange}
                                 placeholder="UAH"
                                 className={styles.input}
                             />
                             <input
                                 type="text"
-                                value={inputValue32}
-                                onChange={(e) => setInputValue32(e.target.value)}
+                                value={formDataFundraising.donationUrl}
+                                onChange={handleInputChange}
                                 placeholder="Номер картки"
                                 className={styles.input}
                             />
                             <input
                                 type="text"
-                                value={inputValue33}
-                                onChange={(e) => setInputValue33(e.target.value)}
+                                name='donationUrl'
+                                value={formDataFundraising.donationUrl}
+                                onChange={handleInputChange}
                                 placeholder="Посилання на монобанк"
                                 className={styles.input}
                             />
@@ -161,6 +223,7 @@ const Modal = () => {
                 </div>
             )}
             <button
+                onClick={selectedOption1 === 'Збір' ? handleFundraising : handleHumanitarianAid}
                 className={styles.registerButton}
                 style={{
                     display: selectedOption1 ? 'block' : 'none',
