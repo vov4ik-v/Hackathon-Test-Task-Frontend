@@ -51,7 +51,7 @@
     font-weight: 600;
 }
 
-.extraHelpContainer {
+.extraHelpContainer1 {
     width: 70%;
     margin: 0 auto;
     margin-bottom: 10rem;
@@ -59,7 +59,7 @@
     padding-bottom: 5rem;
 }
 
-.sectionsContainer {
+.sectionsContainer1 {
     display: flex;
     justify-content: space-between;
 }
@@ -91,6 +91,7 @@
 .titleContainer {
     display: flex;
     align-items: center;
+    margin-top: 7rem;
 }
 
 .title {
@@ -183,4 +184,26 @@
 .footeremail2 input {
     padding: 8px 12px;
     font-size: 28px;
+}
+
+.switcher {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.switcher button {
+    font-size: 30px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+}
+
+.switcher button:hover {
+    cursor: pointer;
+}
+
+.switcher button.active {
+    border-bottom: 2px solid red;
 }
