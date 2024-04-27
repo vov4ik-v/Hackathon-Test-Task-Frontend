@@ -42,3 +42,4 @@ export async function registerHumanitarianAid(body, token) {
         throw error;
     }
 }
+
