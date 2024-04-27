@@ -32,8 +32,8 @@ export default function Registration() {
                             <div className='stage'>2</div>
                         </div>
                         <p>З якою метою ви реєструєтесь?</p>
-                        <button onClick={handleWantToAskHelp}>Я прагну допомогти</button>
-                        <button onClick={handleDontWantToAskHelp}>Хочу зробити запит про потребу</button>
+                        <button onClick={handleDontWantToAskHelp}>Я прагну допомогти</button>
+                        <button onClick={handleWantToAskHelp}>Хочу зробити запит про потребу</button>
                         <div className='functional_buttons'>
                             <Link href='/'>Повернутись на головну</Link>
                             <Link  href='/register/stage1'>Далі</Link>

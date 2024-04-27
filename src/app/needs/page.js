@@ -25,8 +25,8 @@ const Needs = () => {
             <div className={styles.needsText}>
                 Потреби
             </div>
-            <div className={styles.needsContainer}>
-                <div className={styles.leftSection}>
+            <div className={styles.needsContainer} >
+                <div className={styles.leftSection} >
                     <p className={styles.leftSectionText}>
                         На цій сторінці ви знайдете інформацію про термінові потреби людей,
                         військових та інших осіб, які потребують допомоги в різних сферах життя.
