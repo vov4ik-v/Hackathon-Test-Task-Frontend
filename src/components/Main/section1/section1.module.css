@@ -32,7 +32,7 @@
 
 .textBesideImage {
   font-size: 96px;
-  margin-left: 30rem;
+  margin-left: 25rem;
   color: red;
   position: relative;
 }
@@ -48,7 +48,8 @@
   border: none;
   position: absolute;
   top: 7rem;
-  margin-left: -12rem;
+  margin-left: -13.5rem;
+  white-space: nowrap;
 }
 
 .endedText {

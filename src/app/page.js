@@ -11,13 +11,11 @@ import ExtraHelp from '../components/Main/extraHelp/extraHelp';
 export default function Home() {
   return (
     <>
-    {/* <Header />
-    <HelpUkraine /> */}
-    {/* <SupportAction /> */}
-    {/* <ExtraHelp /> */}
     <Section1 />
-    {/* <News />
-    <Footer /> */}
+    <HelpUkraine />
+    <ExtraHelp />
+    <SupportAction />
+    <News />
     </>
   );
 }
