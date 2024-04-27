@@ -22,9 +22,8 @@ export async function registerFundraising(body, token) {
         const response = await axios.post(`${API_BASE_URL}/needs/create/activeFundraising`, body, config);
         return response.data;
     } catch (error) {
-        // Handle errors if any
         console.error('Error registering fundraising:', error);
-        throw error; // You can handle or rethrow the error as needed
+        throw error;
     }
 }
 
