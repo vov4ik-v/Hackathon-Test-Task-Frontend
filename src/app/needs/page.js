@@ -120,8 +120,26 @@ const Needs = () => {
                     )}
                     {activeContent === 3 && (
                         <div>
-                            {/* Вміст для третього контенту */}
+                        <div className={styles.divided1}>
+                            <div className={styles.leftSection1}>
+                                <div className={styles.item}>
+                                    <span className={styles.itemText1}>Павленко Максим Олегович</span>
+                                </div>
+                                <div className={styles.quote}>
+                                    <span className={styles.quoteText}>"</span>
+                                    <p className={styles.quoteContent}>психолог з великим досвідом та глибоким
+                                     розумінням людської психіки. Я відомий своєю ефективністю в роботі з тривожністю,
+                                      депресією, стресом та відносинами, та завжди готовий допомогти своїм клієнтам
+                                       знайти внутрішню гармонію та розвити стратегії самовдосконалення.</p>
+                                </div>
+                            </div>
+                            <div className={styles.rightSection1}>
+                                <img src="person1.svg" alt="Extra" className={styles.extraImage} />
+                                <div className={styles.learnMoreContainer}>
+                                </div>
+                            </div>
                         </div>
+                    </div>
                     )}
                 </div>
             </div>
