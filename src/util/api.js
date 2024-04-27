@@ -43,3 +43,18 @@ export async function registerHumanitarianAid(body, token) {
     }
 }
 
+export async function getCurrentUser(token) {
+    const config = {
+        headers: {
+            Authorization: `${token}`
+        }
+    };
+
+    try {
+        const response = await axios.get(`${API_BASE_URL}/user/`, config);
+        return response.data;
+    } catch (error) {
+        console.error('Error getting current user:', error);
+        throw error;
+    }
+}
