@@ -5,6 +5,7 @@ import { getCurrentUser } from '@/util/api';
 
 const UserPage = () => {
     const [usermail, setUsermail] = useState('');
+    const [userbio, setUserbio] = useState('');
 
     useEffect(() => {
         const token = localStorage.getItem('accessToken');
@@ -17,6 +18,7 @@ const UserPage = () => {
         try {
             const userData = await getCurrentUser(token);
             setUsermail(userData.email);
+            setUserbio(userData.bio);
         } catch (error) {
             console.error('Error getting current user data:', error);
         }
@@ -36,9 +38,11 @@ const UserPage = () => {
                 </div>
                 <div className={styles.rightSection}>
                     <p className={styles.usermail}>{usermail}</p>
-                    <div className={styles.volunteerInfo}>
-                        <p>Працюю волонтером у місцевому пришкільному таборі для дітей з вразливих сімей протягом останніх 5 років. Також активно беру участь у благодійних заходах для безпритульних та потребуючих.</p>
-                    </div>
+                    {userbio && (
+                        <div className={styles.volunteerInfo}>
+                            <p>{userbio}</p>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
