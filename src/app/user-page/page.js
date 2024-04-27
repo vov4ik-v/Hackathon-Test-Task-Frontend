@@ -8,6 +8,8 @@ const UserPage = () => {
     const [userbio, setUserbio] = useState('');
     const [username, setUsername] = useState('');
     const [editing, setEditing] = useState(false);
+    const [editedUsername, setEditedUsername] = useState('');
+    const [editedUserbio, setEditedUserbio] = useState('');
 
     useEffect(() => {
         const token = localStorage.getItem('accessToken');
@@ -22,6 +24,8 @@ const UserPage = () => {
             setUsermail(userData.email);
             setUserbio(userData.bio);
             setUsername(userData.name);
+            setEditedUsername(userData.name);
+            setEditedUserbio(userData.bio);
         } catch (error) {
             console.error('Error getting current user data:', error);
         }
@@ -33,10 +37,10 @@ const UserPage = () => {
 
     const handleSaveClick = async () => {
         try {
-            await updateUserInfo({ bio: userbio, name: username });
-            setUserbio(userbio);
-            setUsername(username);
+            await updateUserInfo({ bio: editedUserbio, name: editedUsername });
             setEditing(false);
+            setUsername(editedUsername);
+            setUserbio(editedUserbio);
         } catch (error) {
             console.error('Error updating user info:', error);
         }
@@ -61,21 +65,23 @@ const UserPage = () => {
                         <div>
                             <input
                                 type="text"
-                                value={username}
-                                onChange={(e) => setUsername(e.target.value)}
+                                value={editedUsername}
+                                onChange={(e) => setEditedUsername(e.target.value)}
                             />
                             <input
                                 type="text"
-                                value={userbio}
-                                onChange={(e) => setUserbio(e.target.value)}
+                                value={editedUserbio}
+                                onChange={(e) => setEditedUserbio(e.target.value)}
                             />
                             <button onClick={handleSaveClick}>Зберегти</button>
                         </div>
                     ) : (
                         <div>
-                            <div className={styles.volunteerInfo}>
-                                <p>{userbio}</p>
-                            </div>
+                            {userbio && (
+                                <div className={styles.volunteerInfo}>
+                                    <p>{userbio}</p>
+                                </div>
+                            )}
                             <button onClick={handleEditClick}>Редагувати</button>
                         </div>
                     )}
