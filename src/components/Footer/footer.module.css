@@ -31,7 +31,7 @@
     border-width: 0px 0px 1px 0px;
     border-color: #000;
     padding: 15px 0 15px 15px;
-    font-family: "Jura", Arial, Helvetica, sans-serif;
+    font-family: '__Jura_4059e7';
 }
 
 .footeremail2 {
@@ -41,7 +41,7 @@
 
 .footeremail2 input {
     padding: 8px 12px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .socialnet {

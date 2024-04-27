@@ -20,9 +20,13 @@ const Header = () => {
     router.push('login');
   };
 
+  const handleLogoClick = () => {
+    router.push('/');
+  };
+
   return (
     <div className={styles.header}>
-      <div className={styles.logo}>
+      <div className={styles.logo} onClick={handleLogoClick}>
         <img src="/logo.svg" alt="Логотип" />
         <div className={styles.logoText}> Допомога в дії </div>
       </div>
