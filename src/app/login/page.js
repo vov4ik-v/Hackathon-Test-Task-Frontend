@@ -4,17 +4,17 @@ import {useState} from "react";
 import '../register/auth.css'
 import {login} from "@/util/api";
 import {useRouter} from "next/navigation";
+import {GOOGLE_AUTH_URL} from "@/constants";
 
-export default function Login(){
-    const router= useRouter()
+export default function Login() {
+    const router = useRouter()
     const [formData, setFormData] = useState({
         email: "",
-
         password: ""
 
     });
     const handleInputChange = event => {
-        const { name, value } = event.target;
+        const {name, value} = event.target;
         setFormData(prevState => ({
             ...prevState,
             [name]: value
@@ -26,11 +26,11 @@ export default function Login(){
 
         login(formData)
             .then(response => {
-                    if(response.token){
-                        localStorage.setItem('accessToken',response.token)
-                        router.push('/')
-                    }
-                })
+                if (response.token) {
+                    localStorage.setItem('accessToken', response.token)
+                    router.push('/')
+                }
+            })
 
 
             .catch(error => {
@@ -38,7 +38,7 @@ export default function Login(){
             });
     };
 
-    return(
+    return (
         <div className='wrapper'>
             <div className='registration_container'>
                 <div className='registration_table'>
@@ -65,19 +65,22 @@ export default function Login(){
                                     onChange={handleInputChange}
                                     required
                                 />
-                                <p className='forget_password_button' ><Link href='/forget'>Забули пароль?</Link> </p>
+                                <p className='forget_password_button'><Link href='/forget'>Забули пароль?</Link></p>
 
-                                <button type="button" className="login-with-google-btn" >
+                                <a className="login-with-google-btn" href={GOOGLE_AUTH_URL}>
                                     Швидка авторизація
-                                </button>
-                               </div>
+                                </a>
+
+
+                            </div>
                         </div>
                         <div className='enter'>
                             {/*<Link href='/'>Повернутись на головну</Link>*/}
                             <button className='continue' type="submit">Увійти</button>
 
                         </div>
-                        <p >Немає облікового запису? Тоді можете <Link style={{color:'blue'}} href='/register'>створити його</Link> </p>
+                        <p>Немає облікового запису? Тоді можете <Link style={{color: 'blue'}} href='/register'>створити
+                            його</Link></p>
                     </form>
                 </div>
             </div>

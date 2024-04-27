@@ -11,6 +11,23 @@ export async function login(body) {
     return response.data;
 }
 
+export async function forgotPassword(body) {
+    try {
+        const response = await axios.post(`${API_BASE_URL}/user/forgot`, { email: body.email });
+        return response.data;
+    } catch (error) {
+        console.error('Помилка при відправленні запиту на відновлення пароля:', error);
+    }
+}
+export async function resetPassword(body) {
+    try {
+        const response = await axios.post(`${API_BASE_URL}/user/forgot/setNewPassword`, body);
+        return response.data;
+    } catch (error) {
+        console.error('Помилка при відправленні запиту на відновлення пароля:', error);
+    }
+}
+
 export async function registerFundraising(body, token) {
     const config = {
         headers: {

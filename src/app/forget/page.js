@@ -2,16 +2,16 @@
 import Link from "next/link";
 import {useState} from "react";
 import '../register/auth.css'
-import {login} from "@/util/api";
+import {forgotPassword, login} from "@/util/api";
 import {useRouter} from "next/navigation";
 
 export default function Forget(){
     const router= useRouter()
     const [formData, setFormData] = useState({
-        email: "",
-        password: ""
+        email: ""
 
     });
+
     const handleInputChange = event => {
         const { name, value } = event.target;
         setFormData(prevState => ({
@@ -20,22 +20,19 @@ export default function Forget(){
         }));
     };
 
-    // const handleSubmit = event => {
-    //     event.preventDefault();
-    //
-    //     login(formData)
-    //         .then(response => {
-    //                 if(response.token){
-    //                     localStorage.setItem('accessToken',response.token)
-    //                     router.push('/')
-    //                 }
-    //             })
-    //
-    //
-    //         .catch(error => {
-    //             console.log(error)
-    //         });
-    // };
+    const handleSubmit = event => {
+        event.preventDefault();
+
+        forgotPassword(formData)
+            .then(response => {
+                    router.push("/forget/sent_email_again")
+                })
+
+
+            .catch(error => {
+                console.log(error)
+            });
+    };
 
     return(
         <div className='wrapper'>
@@ -45,7 +42,7 @@ export default function Forget(){
                     <p className='under_main_text'>Забули пароль?</p>
                     <p className='text_about_forget'>Вам потрібно ввести електронну адресу, пов'язану з його обліковим записом</p>
                     <form
-                        // onSubmit={handleSubmit}
+                        onSubmit={handleSubmit}
                     >
                         <div className='inputs_container'>
                             <div className='inputs_table'>

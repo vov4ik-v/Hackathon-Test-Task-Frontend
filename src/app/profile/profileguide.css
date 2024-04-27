@@ -1,0 +1,36 @@
+:root {
+    --x-1: rgba(33, 33, 33, 1);
+    --x-3f-3f-3f: rgba(55, 55, 55, 1);
+    --e-6e-6e-4: rgba(230, 230, 228, 1);
+    --ba-1e-1e: rgba(186, 30, 30, 1);
+    --bf-4545: rgba(191, 69, 69, 1);
+    --csk-ba1e1e500: rgba(186, 30, 30, 1);
+    --csk-ba1e1e50: rgba(251, 233, 233, 1);
+    --csk-ba1e1e950: rgba(22, 4, 4, 1);
+    --csk-ba1e1e100: rgba(248, 211, 211, 1);
+    --csk-ba1e1e200: rgba(241, 167, 167, 1);
+    --csk-ba1e1e300: rgba(234, 123, 123, 1);
+    --csk-ba1e1e400: rgba(227, 79, 79, 1);
+    --csk-ba1e1e600: rgba(176, 28, 28, 1);
+    --csk-ba1e1e700: rgba(132, 21, 21, 1);
+    --csk-ba1e1e800: rgba(88, 14, 14, 1);
+    --csk-ba1e1e900: rgba(44, 7, 7, 1);
+    --csk-dedede500: rgba(222, 222, 222, 1);
+    --csk-dedede50: rgba(242, 242, 242, 1);
+    --csk-dedede950: rgba(13, 13, 13, 1);
+    --csk-dedede100: rgba(230, 230, 230, 1);
+    --csk-dedede200: rgba(204, 204, 204, 1);
+    --csk-dedede300: rgba(179, 179, 179, 1);
+    --csk-dedede400: rgba(153, 153, 153, 1);
+    --csk-dedede600: rgba(102, 102, 102, 1);
+    --csk-dedede700: rgba(77, 77, 77, 1);
+    --csk-dedede800: rgba(51, 51, 51, 1);
+    --csk-dedede900: rgba(26, 26, 26, 1);
+    --text-font-family: "Jura", Helvetica;
+    --text-font-weight: 400;
+    --text-font-size: 40px;
+    --text-letter-spacing: 0px;
+    --text-line-height: normal;
+    --text-font-style: normal;
+    --drop-shadow: 4px 4px 20.700000762939453px 0px rgba(0, 0, 0, 0.25);
+}

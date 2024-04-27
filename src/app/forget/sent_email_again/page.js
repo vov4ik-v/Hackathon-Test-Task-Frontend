@@ -7,35 +7,10 @@ import {useRouter} from "next/navigation";
 
 export default function SentEmailAgain(){
     const router= useRouter()
-    const [formData, setFormData] = useState({
-        email: "",
-        password: ""
-
-    });
-    const handleInputChange = event => {
-        const { name, value } = event.target;
-        setFormData(prevState => ({
-            ...prevState,
-            [name]: value
-        }));
+    const handleSubmit = event => {
+        event.preventDefault();
+        router.push("/forget")
     };
-
-    // const handleSubmit = event => {
-    //     event.preventDefault();
-    //
-    //     login(formData)
-    //         .then(response => {
-    //                 if(response.token){
-    //                     localStorage.setItem('accessToken',response.token)
-    //                     router.push('/')
-    //                 }
-    //             })
-    //
-    //
-    //         .catch(error => {
-    //             console.log(error)
-    //         });
-    // };
 
     return(
         <div className='wrapper'>
@@ -50,8 +25,7 @@ export default function SentEmailAgain(){
                         </svg>                    </div>
                     <p className='text_in_sent_email_again'>Якщо ви не отримали email, перевірте Спам або спробуйте ввести іншу електронну адресу</p>
                     <div className='enter'>
-                        {/*<Link href='/'>Повернутись на головну</Link>*/}
-                        <button className='continue' type="submit">Надіслати знову</button>
+                        <button className='continue' onClick={handleSubmit}>Надіслати знову</button>
                     </div>
                 </div>
             </div>
