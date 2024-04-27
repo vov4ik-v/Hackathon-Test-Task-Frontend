@@ -90,8 +90,33 @@ const Needs = () => {
                     )}
                     {activeContent === 2 && (
                         <div>
-                            {/* Вміст для другого контенту */}
+                        <div className={styles.titleContainer}>
+                            <h2 className={styles.title}>Гуманітарна допомога</h2>
+                            <img src="/mark.svg" alt="Mark" className={styles.markImage} />
                         </div>
+                        <div className={styles.divided}>
+                            <div className={styles.leftSection1}>
+                                <div className={styles.item}>
+                                    <span className={styles.itemText}>Місто</span>
+                                    <span className={styles.itemNumber}>Львів</span>
+                                </div>
+                                <div className={styles.quote}>
+                                    <span className={styles.quoteText}>"</span>
+                                    <p className={styles.quoteContent}>Ми збираємо продукти харчування, медичні засоби,
+                                     одяг та інші необхідні ресурси для тих, хто втратив все через воєнні дії.</p>
+                                </div>
+                            </div>
+                            <div className={styles.rightSection1}>
+                                <img src="/main-page/extraHelp.svg" alt="Extra" className={styles.extraImage} />
+                                <div className={styles.learnMoreContainer}>
+                                    <div className={styles.learnMore}>
+                                        <p className={styles.learnMoreText}>Дізнатись більше</p>
+                                        <img src="/main-page/arrow2.svg" alt="Arrow" className={styles.arrowIcon} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     )}
                     {activeContent === 3 && (
                         <div>

@@ -88,13 +88,13 @@
     display: flex;
     align-items: center;
     margin-top: 7rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .title {
     font-size: 48px;
     margin-right: 2rem;
-    margin-left: 15rem;
+    margin-left: 20rem;
 }
 
 .markImage {
@@ -121,7 +121,6 @@
     border: 2px solid #212121;
     border-radius: 15px;
     padding: 10px;
-    margin-top: 3rem;
     margin-left: 5rem;
 }
 
