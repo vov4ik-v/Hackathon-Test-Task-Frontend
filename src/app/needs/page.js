@@ -6,6 +6,8 @@ import styles from './needs.module.css';
 
 const Needs = () => {
     const [showModal, setShowModal] = useState(false);
+    const wantAskHelp = localStorage.getItem('wantToAskHelp');
+
 
     const toggleModal = () => {
         setShowModal(!showModal);
@@ -19,14 +21,15 @@ const Needs = () => {
             <div className={styles.needsText}>
                 Потреби
             </div>
-            <div className={styles.needsContainer}>
-                <div className={styles.leftSection}>
+            <div className={styles.needsContainer} >
+                <div className={styles.leftSection} >
                     <p className={styles.leftSectionText}>
                         На цій сторінці ви знайдете інформацію про термінові потреби людей,
                         військових та інших осіб, які потребують допомоги в різних сферах життя.
                     </p>
-                    <button className={styles.registerButton} onClick={toggleModal}>Зареєструвати потребу</button>
-                    {showModal && <Modal />}
+                    {wantAskHelp && <button className={styles.registerButton} onClick={toggleModal}>Зареєструвати потребу</button>
+                    }
+                    {showModal && <Modal/>}
                 </div>
                 <div className={styles.rightSection}>
                     <img src="/flag.svg" alt="Flag" className={styles.flagImage} />
